@@ -1,0 +1,1431 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Sahim S Tambadi - Computer Science Engineering student, Full-Stack Developer and AI/ML enthusiast. Explore projects in AI, computer vision and web development.">
+
+    <meta name="keywords"
+        content="Sahim Tambadi, Full Stack Developer, Python Developer, React, Supabase, AI ML, Computer Vision, Flask, YOLOv8">
+
+    <meta name="author" content="Sahim S Tambadi">
+    <meta name="theme-color" content="#070711">
+
+    <title>Sahim S Tambadi | Developer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                Sahim<span>.</span>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <button class="theme-btn" id="themeBtn"
+                    aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-actions">
+
+                <button class="theme-btn mobile-theme"
+                    id="mobileThemeBtn"
+                    aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="menu-btn" id="menuBtn"
+                    aria-label="Open menu"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero section" id="home">
+
+            <div class="hero-grid"></div>
+
+            <div class="container hero-container">
+
+                <div class="hero-content reveal">
+
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        Open to learning and opportunities
+                    </div>
+
+                    <p class="hero-small">Hello, I'm</p>
+
+                    <h1>
+                        Sahim S
+                        <span>Tambadi</span>
+                    </h1>
+
+                    <h2>
+                        Computer Science & Engineering Student
+                        <br>
+                        <span id="typingText"></span>
+                    </h2>
+
+                    <p class="hero-description">
+                        I build practical software solutions using
+                        <strong>Full-Stack Development, Artificial
+                        Intelligence, Machine Learning and Computer
+                        Vision.</strong>
+
+                        I enjoy transforming ideas into useful
+                        applications and solving real-world problems
+                        through technology.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-code"></i>
+                            Explore My Projects
+                        </a>
+
+                        
+                        <a href="./assets/Sahim_Resume.pdf"
+                            download="Sahim-S-Tambadi-Resume.pdf"
+                            class="btn btn-outline">
+                                <i class="fa-solid fa-download"></i>
+                                Download Resume
+                            </a>
+
+                    </div>
+
+                    <!-- SOCIAL LINKS -->
+                    <div class="social-links">
+
+                        <a href="mailto:sahimtambadi278@gmail.com"
+                            title="Email"
+                            aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/sahim-tambadi-6a3b79370/"
+                            class="external-link"
+                            data-url="https://www.linkedin.com/in/sahim-tambadi-6a3b79370/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="LinkedIn"
+                            aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://github.com/SahimTambadi"
+                            class="external-link"
+                            data-url="https://github.com/SahimTambadi"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="GitHub"
+                            aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- HERO VISUAL -->
+                <div class="hero-visual reveal">
+
+                    <div class="code-window">
+
+                        <div class="window-header">
+
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span>developer.py</span>
+
+                        </div>
+
+                        <div class="code-content">
+
+                            <p>
+                                <span class="code-purple">class</span>
+                                <span class="code-blue">Developer</span>:
+                            </p>
+
+                            <p class="indent">
+                                name =
+                                <span class="code-green">
+                                    "Sahim Tambadi"
+                                </span>
+                            </p>
+
+                            <p class="indent">
+                                role =
+                                <span class="code-green">
+                                    "Full-Stack Developer"
+                                </span>
+                            </p>
+
+                            <p class="indent">
+                                interests = [
+                            </p>
+
+                            <p class="indent2">
+                                <span class="code-green">"AI/ML"</span>,
+                            </p>
+
+                            <p class="indent2">
+                                <span class="code-green">"Computer Vision"</span>,
+                            </p>
+
+                            <p class="indent2">
+                                <span class="code-green">"Web Development"</span>
+                            </p>
+
+                            <p class="indent">]</p>
+
+                            <p class="indent">
+                                <span class="code-purple">def</span>
+                                <span class="code-blue">build</span>():
+                            </p>
+
+                            <p class="indent2">
+                                <span class="code-purple">return</span>
+                                <span class="code-green">
+                                    "Real-world solutions"
+                                </span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card card-ai">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                        <div>
+                            <strong>AI / ML</strong>
+                            <small>Intelligent applications</small>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card card-code">
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <div>
+                            <strong>Full Stack</strong>
+                            <small>Frontend + Backend</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section about" id="about">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">01</span>
+
+                    <div>
+                        <p class="section-label">GET TO KNOW ME</p>
+                        <h2>About <span>Me</span></h2>
+                    </div>
+
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-image reveal">
+
+                        <div class="profile-box">
+
+                            <div class="profile-icon">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <h3>Sahim S Tambadi</h3>
+
+                            <p>CSE Student & Developer</p>
+
+                            <div class="profile-line"></div>
+
+                            <div class="profile-stat">
+                                <strong>2027</strong>
+                                <span>Expected Graduation</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="about-content reveal">
+
+                        <p class="about-intro">
+                            I'm a final-year
+                            <strong>Computer Science and Engineering
+                            student</strong> at Maratha Mandal Engineering
+                            College, Belagavi, with an expected graduation
+                            in 2027.
+                        </p>
+
+                        <p>
+                            My interests include full-stack web development,
+                            Artificial Intelligence, Machine Learning,
+                            Computer Vision and software engineering.
+                        </p>
+
+                        <p>
+                            I have worked on projects involving Python,
+                            Flask, React, JavaScript, Supabase, SQL,
+                            OpenCV and YOLOv8. These projects have helped
+                            me understand application development,
+                            database integration, computer vision
+                            workflows and software testing.
+                        </p>
+
+                        <p>
+                            I enjoy learning new technologies, working
+                            collaboratively, exploring technical
+                            challenges and turning concepts into
+                            functional applications.
+                        </p>
+
+                        <div class="about-highlights">
+
+                            <div>
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <span>Full-Stack Development</span>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-brain"></i>
+                                <span>Artificial Intelligence</span>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-eye"></i>
+                                <span>Computer Vision</span>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-database"></i>
+                                <span>Database Development</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section skills-section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">02</span>
+
+                    <div>
+                        <p class="section-label">MY TECHNOLOGIES</p>
+                        <h2>Skills & <span>Expertise</span></h2>
+                    </div>
+
+                </div>
+
+                <div class="skill-filters reveal">
+
+                    <button class="skill-filter active"
+                        data-filter="all">All</button>
+
+                    <button class="skill-filter"
+                        data-filter="programming">Programming</button>
+
+                    <button class="skill-filter"
+                        data-filter="web">Web</button>
+
+                    <button class="skill-filter"
+                        data-filter="ai">AI / ML</button>
+
+                    <button class="skill-filter"
+                        data-filter="database">Databases</button>
+
+                    <button class="skill-filter"
+                        data-filter="tools">Tools</button>
+
+                </div>
+
+                <div class="skills-grid">
+
+                    <!-- Programming -->
+                    <div class="skill-card reveal"
+                        data-category="programming">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-terminal"></i>
+                        </div>
+
+                        <h3>Programming</h3>
+
+                        <div class="skill-list">
+                            <span>C</span>
+                            <span>C++</span>
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="skill-card reveal"
+                        data-category="web">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <h3>Web Development</h3>
+
+                        <div class="skill-list">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Flask</span>
+                            <span>Responsive Design</span>
+                        </div>
+
+                    </div>
+
+                    <!-- AI and ML -->
+                    <div class="skill-card reveal"
+                        data-category="ai">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+
+                        <h3>AI / Machine Learning</h3>
+
+                        <div class="skill-list">
+                            <span>Artificial Intelligence</span>
+                            <span>Machine Learning</span>
+                            <span>Computer Vision</span>
+                            <span>YOLOv8</span>
+                            <span>OpenCV</span>
+                            <span>TensorFlow</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-card reveal"
+                        data-category="database">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <h3>Databases</h3>
+
+                        <div class="skill-list">
+                            <span>PostgreSQL</span>
+                            <span>Supabase</span>
+                            <span>SQLite</span>
+                            <span>MySQL</span>
+                            <span>MongoDB</span>
+                            <span>SQLAlchemy</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Testing -->
+                    <div class="skill-card reveal"
+                        data-category="tools">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-vial"></i>
+                        </div>
+
+                        <h3>Testing & Evaluation</h3>
+
+                        <div class="skill-list">
+                            <span>Pytest</span>
+                            <span>Software Testing</span>
+                            <span>Test Automation</span>
+                            <span>Quality Evaluation</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-card reveal"
+                        data-category="tools">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+
+                        <h3>Tools & Technologies</h3>
+
+                        <div class="skill-list">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>Streamlit</span>
+                            <span>Microsoft Excel</span>
+                            <span>LaTeX</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section projects-section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">03</span>
+
+                    <div>
+                        <p class="section-label">WHAT I'VE BUILT</p>
+                        <h2>Featured <span>Projects</span></h2>
+                    </div>
+
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- PROJECT 1: WEAPON DETECTION -->
+                    <article class="project-card featured reveal">
+
+                        <div class="project-top">
+
+                            <div class="project-icon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+
+                            <span class="project-type">Major Project</span>
+
+                        </div>
+
+                        <h3>
+                            AI-Based Weapon & Violence Detection System
+                        </h3>
+
+                        <p>
+                            An AI-powered surveillance application designed
+                            to identify people and potential weapons from
+                            camera feeds and video streams. The system
+                            combines computer vision with a web-based
+                            monitoring dashboard.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>YOLOv8</span>
+                            <span>OpenCV</span>
+                            <span>SQLite</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <ul class="project-features">
+
+                            <li><i class="fa-solid fa-check"></i> Person detection</li>
+                            <li><i class="fa-solid fa-check"></i> Gun detection</li>
+                            <li><i class="fa-solid fa-check"></i> Knife detection</li>
+                            <li><i class="fa-solid fa-check"></i> Camera monitoring</li>
+                            <li><i class="fa-solid fa-check"></i> Automatic detection screenshots</li>
+                            <li><i class="fa-solid fa-check"></i> Incident monitoring</li>
+
+                        </ul>
+
+                        <!-- STARTUP INCUBATION ACHIEVEMENT -->
+                        <div class="project-achievement">
+
+                            <span class="achievement-badge">
+                                🏆 Selected for Startup Incubation
+                            </span>
+
+                            <h4>Startup Incubation Recognition</h4>
+
+                            <p>
+                                Successfully developed and presented an
+                                innovative technology-based project selected
+                                for the startup incubation initiative at
+                                Maratha Mandal Engineering College (MMEC),
+                                Belagavi.
+                            </p>
+
+                            <p>
+                                Received recognition and support from college
+                                leadership, including the President of MMEC.
+                                Also had the opportunity to present the project
+                                before potential investors and discuss future
+                                development and commercialization.
+                            </p>
+
+                            <p>
+                                Explored opportunities for startup development,
+                                investment and transforming the project into
+                                a real-world solution.
+                            </p>
+
+                            <strong>
+                                Project Selection | Incubation Opportunity |
+                                Investor Interaction | Startup Development
+                            </strong>
+
+                        </div>
+
+                        <div class="project-buttons">
+
+                            <button type="button"
+                                class="btn btn-small btn-primary"
+                                onclick="openProject('weapon')">
+                                <i class="fa-solid fa-eye"></i>
+                                View Case Study
+                            </button>
+
+                            <a href="https://github.com/SahimTambadi"
+                                class="icon-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="View GitHub Profile"
+                                aria-label="View GitHub profile for weapon detection project">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- PROJECT 2: CHATBOT QUALITY -->
+                    <article class="project-card reveal">
+
+                        <div class="project-top">
+
+                            <div class="project-icon">
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+
+                            <span class="project-type">AI / QA Project</span>
+
+                        </div>
+
+                        <h3>AI Chatbot Quality Evaluation Framework</h3>
+
+                        <p>
+                            A Python-based framework for evaluating chatbot
+                            responses through structured quality metrics,
+                            automated test cases and a dashboard for
+                            reviewing evaluation results.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Pytest</span>
+                            <span>Streamlit</span>
+                            <span>SQLite</span>
+                            <span>Pandas</span>
+                        </div>
+
+                        <ul class="project-features">
+
+                            <li><i class="fa-solid fa-check"></i> Response evaluation</li>
+                            <li><i class="fa-solid fa-check"></i> Accuracy metrics</li>
+                            <li><i class="fa-solid fa-check"></i> Relevance checks</li>
+                            <li><i class="fa-solid fa-check"></i> Safety evaluation</li>
+                            <li><i class="fa-solid fa-check"></i> Automated test cases</li>
+                            <li><i class="fa-solid fa-check"></i> Evaluation dashboard</li>
+
+                        </ul>
+
+                        <div class="project-buttons">
+
+                            <button type="button"
+                                class="btn btn-small btn-primary"
+                                onclick="openProject('chatbot')">
+                                <i class="fa-solid fa-eye"></i>
+                                View Case Study
+                            </button>
+
+                            <a href="https://github.com/SahimTambadi"
+                                class="icon-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="View GitHub Profile"
+                                aria-label="View GitHub profile for chatbot framework">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- PROJECT 3: VAXCARE -->
+                    <article class="project-card reveal">
+
+                        <div class="project-top">
+
+                            <div class="project-icon">
+                                <i class="fa-solid fa-syringe"></i>
+                            </div>
+
+                            <span class="project-type">Full-Stack Project</span>
+
+                        </div>
+
+                        <h3>VaxCare – Vaccine Information Portal</h3>
+
+                        <p>
+                            A full-stack vaccine information portal built
+                            to organize vaccine-related information and
+                            provide users with accessible details through
+                            a React interface and Supabase backend.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>Supabase</span>
+                            <span>PostgreSQL</span>
+                            <span>Vite</span>
+                            <span>CSS</span>
+                        </div>
+
+                        <ul class="project-features">
+
+                            <li><i class="fa-solid fa-check"></i> Vaccine information</li>
+                            <li><i class="fa-solid fa-check"></i> Detailed vaccine pages</li>
+                            <li><i class="fa-solid fa-check"></i> Supabase integration</li>
+                            <li><i class="fa-solid fa-check"></i> User authentication</li>
+                            <li><i class="fa-solid fa-check"></i> Admin management</li>
+                            <li><i class="fa-solid fa-check"></i> Database integration</li>
+
+                        </ul>
+
+                        <div class="project-buttons">
+
+                            <button type="button"
+                                class="btn btn-small btn-primary"
+                                onclick="openProject('vaxcare')">
+                                <i class="fa-solid fa-eye"></i>
+                                View Case Study
+                            </button>
+
+                            <a href="https://github.com/SahimTambadi"
+                                class="icon-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="View GitHub Profile"
+                                aria-label="View GitHub profile for VaxCare">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- PROJECT 4: EVENT MANAGEMENT -->
+                    <article class="project-card reveal">
+
+                        <div class="project-top">
+
+                            <div class="project-icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+
+                            <span class="project-type">Mini Project</span>
+
+                        </div>
+
+                        <h3>College Event Management System</h3>
+
+                        <p>
+                            A web-based application designed to simplify
+                            college event organization, registrations
+                            and participant management through a
+                            centralized dashboard.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>SQLite</span>
+                        </div>
+
+                        <ul class="project-features">
+
+                            <li><i class="fa-solid fa-check"></i> User authentication</li>
+                            <li><i class="fa-solid fa-check"></i> Event management</li>
+                            <li><i class="fa-solid fa-check"></i> Event registration</li>
+                            <li><i class="fa-solid fa-check"></i> Participant management</li>
+                            <li><i class="fa-solid fa-check"></i> Database integration</li>
+                            <li><i class="fa-solid fa-check"></i> Event dashboard</li>
+
+                        </ul>
+
+                        <div class="project-buttons">
+
+                            <button type="button"
+                                class="btn btn-small btn-primary"
+                                onclick="openProject('event')">
+                                <i class="fa-solid fa-eye"></i>
+                                View Case Study
+                            </button>
+
+                            <a href="https://github.com/SahimTambadi"
+                                class="icon-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="View GitHub Profile"
+                                aria-label="View GitHub profile for event management project">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section education-section" id="education">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">04</span>
+
+                    <div>
+                        <p class="section-label">MY JOURNEY</p>
+                        <h2><span>Education</span></h2>
+                    </div>
+
+                </div>
+
+                <div class="timeline">
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-date">2023 – Present</div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-badge">Current</span>
+
+                            <h3>Bachelor of Engineering</h3>
+
+                            <h4>Computer Science & Engineering</h4>
+
+                            <p>
+                                Maratha Mandal Engineering College,
+                                Belagavi
+                            </p>
+
+                            <small>Expected Graduation: 2027</small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-date">2021 – 2023</div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <h3>Pre-University Course</h3>
+
+                            <h4>Science</h4>
+
+                            <p>
+                                Holy Cross Convent PU College, Bidi
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-date">2011 – 2021</div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <h3>SSLC</h3>
+
+                            <p>
+                                Holy Cross Convent English Medium
+                                School, Bidi
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="section experience-section" id="experience">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">05</span>
+
+                    <div>
+                        <p class="section-label">PROJECTS & DEVELOPMENT</p>
+                        <h2>My <span>Experience</span></h2>
+                    </div>
+
+                </div>
+
+                <div class="experience-card reveal">
+
+                    <div class="experience-header">
+
+                        <div>
+
+                            <span class="experience-status">
+                                Academic & Project Experience
+                            </span>
+
+                            <h3>Computer Science & Engineering Student</h3>
+
+                            <p>
+                                Maratha Mandal Engineering College,
+                                Belagavi
+                            </p>
+
+                        </div>
+
+                        <span class="experience-date">2023 – Present</span>
+
+                    </div>
+
+                    <div class="experience-grid">
+
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <p>
+                                Developed academic and personal
+                                software applications.
+                            </p>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-users"></i>
+                            <p>
+                                Worked collaboratively on projects
+                                and took a team-lead role in the
+                                weapon detection project.
+                            </p>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-eye"></i>
+                            <p>
+                                Explored computer vision, object
+                                detection and AI-based applications.
+                            </p>
+                        </div>
+
+                        <div>
+                            <i class="fa-brands fa-github"></i>
+                            <p>
+                                Used Git and GitHub for source
+                                control and project collaboration.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section class="section certifications-section"
+            id="certifications">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">06</span>
+
+                    <div>
+                        <p class="section-label">LEARNING & DEVELOPMENT</p>
+                        <h2><span>Certifications</span></h2>
+                    </div>
+
+                </div>
+
+                <div class="certifications-grid">
+
+                    <div class="cert-card reveal">
+
+                        <div class="cert-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+
+                        <div>
+
+                            <span class="cert-date">September 2025</span>
+
+                            <h3>AI & LLM Learner</h3>
+
+                            <p>IBM SkillsBuild</p>
+
+                            <div class="cert-topics">
+                                <span>LLM Basics</span>
+                                <span>RAG</span>
+                                <span>LangChain</span>
+                                <span>Prompting</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cert-card reveal">
+
+                        <div class="cert-icon">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+
+                        <div>
+
+                            <span class="cert-date">September 2025</span>
+
+                            <h3>AI Fundamentals Trainee</h3>
+
+                            <p>IBM SkillsBuild</p>
+
+                            <div class="cert-topics">
+                                <span>AI Fundamentals</span>
+                                <span>ML Basics</span>
+                                <span>AI Applications</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- LANGUAGES -->
+        <section class="languages-section">
+
+            <div class="container">
+
+                <div class="languages-wrapper reveal">
+
+                    <div>
+                        <p class="section-label">COMMUNICATION</p>
+                        <h2>Languages</h2>
+                    </div>
+
+                    <div class="languages-list">
+
+                        <span>
+                            <i class="fa-solid fa-language"></i>
+                            English
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-language"></i>
+                            Kannada
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-language"></i>
+                            Hindi
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-language"></i>
+                            Marathi
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-wrapper reveal">
+
+                    <div class="contact-content">
+
+                        <p class="section-label">
+                            HAVE A PROJECT IN MIND?
+                        </p>
+
+                        <h2>Let's <span>Connect</span></h2>
+
+                        <p>
+                            I'm interested in learning, building
+                            meaningful projects and exploring
+                            opportunities in software development,
+                            full-stack engineering and Artificial
+                            Intelligence.
+                        </p>
+
+                        <div class="contact-details">
+
+                            <a href="mailto:sahimtambadi278@gmail.com">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                                <div>
+                                    <small>Email</small>
+                                    <strong>
+                                        sahimtambadi278@gmail.com
+                                    </strong>
+                                </div>
+
+                            </a>
+
+                            <a href="tel:+918296453064">
+
+                                <i class="fa-solid fa-phone"></i>
+
+                                <div>
+                                    <small>Phone</small>
+                                    <strong>+91 8296453064</strong>
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                        <div class="contact-buttons">
+
+                            <a href="mailto:sahimtambadi278@gmail.com"
+                                class="btn btn-primary">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                Email Me
+                            </a>
+
+                           <a href="./assets/Sahim_Resume.pdf"
+                            download="Sahim-S-Tambadi-Resume.pdf"
+                            class="btn btn-outline">
+                                <i class="fa-solid fa-download"></i>
+                                Download Resume
+                            </a>
+
+                        </div>
+
+                        <!-- CONTACT SOCIAL LINKS -->
+                        <div class="social-links contact-social-links">
+
+                            <a href="https://www.linkedin.com/in/sahim-tambadi-6a3b79370/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="LinkedIn"
+                                aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                            <a href="https://github.com/SahimTambadi"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="GitHub"
+                                aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CONTACT FORM -->
+                    <div class="contact-form-wrapper">
+
+                        <form id="contactForm">
+
+                            <div class="form-group">
+
+                                <label for="name">Your Name</label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="email">Your Email</label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="message">Message</label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Write your message..."
+                                    required></textarea>
+
+                            </div>
+
+                            <button type="submit"
+                                class="btn btn-primary form-submit">
+
+                                <i class="fa-solid fa-paper-plane"></i>
+                                Send Message
+
+                            </button>
+
+                            <p class="form-note">
+                                This form opens your email client
+                                with the message prepared.
+                            </p>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PROJECT MODAL -->
+    <div class="modal" id="projectModal">
+
+        <div class="modal-overlay" id="modalOverlay"></div>
+
+        <div class="modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Project details">
+
+            <button class="modal-close"
+                id="modalClose"
+                aria-label="Close project details">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+    <!-- SCROLL TO TOP -->
+    <button class="scroll-top"
+        id="scrollTop"
+        aria-label="Scroll to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <span id="toastMessage">Done</span>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container footer-container">
+
+            <div>
+
+                <a href="#home" class="logo">
+                    Sahim<span>.</span>
+                </a>
+
+                <p>
+                    Computer Science & Engineering Student |
+                    Full-Stack Developer | AI/ML Enthusiast
+                </p>
+
+                <div class="social-links">
+
+                    <a href="https://www.linkedin.com/in/sahim-tambadi-6a3b79370/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="LinkedIn"
+                        aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://github.com/SahimTambadi"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="GitHub"
+                        aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+            <p class="copyright">
+                © <span id="currentYear"></span>
+                Sahim S Tambadi. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+     <script src="script.js"></script>
+  
+
+</body>
+</html>
