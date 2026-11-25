@@ -38,8 +38,8 @@ const PORTFOLIO_CONFIG = {
         },
 
         vaxcare: {
-            github: "",
-            demo: ""
+            github: "https://github.com/SahimTambadi/vaccine-information-portal",
+            demo: "https://vaxcare-1w8t.onrender.com"
         },
 
         event: {
@@ -844,34 +844,54 @@ function openProject(projectId) {
     }
 
 
-    /* GitHub profile/repository link */
 
-    const projectConfig =
-        PORTFOLIO_CONFIG.projects[projectId];
+/* GitHub and Live Demo links */
 
-    const githubURL =
-        projectConfig?.github ||
-        PORTFOLIO_CONFIG.github;
+const projectConfig =
+    PORTFOLIO_CONFIG.projects[projectId];
 
-    const githubHTML = `
+const githubURL =
+    projectConfig?.github ||
+    PORTFOLIO_CONFIG.github;
 
-        <div class="modal-section">
+const demoURL =
+    projectConfig?.demo;
 
-            <a
-                href="${githubURL}"
-                class="btn btn-primary"
-                target="_blank"
-                rel="noopener noreferrer">
+const githubHTML = `
 
-                <i class="fa-brands fa-github"></i>
-                View GitHub
+    <div class="modal-section project-action-buttons">
 
-            </a>
+        <a
+            href="${githubURL}"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer">
 
-        </div>
+            <i class="fa-brands fa-github"></i>
+            View GitHub
 
-    `;
+        </a>
 
+        ${
+            demoURL
+                ? `
+                    <a
+                        href="${demoURL}"
+                        class="btn btn-primary"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                        Live Demo
+
+                    </a>
+                `
+                : ""
+        }
+
+    </div>
+
+`;
 
     /* Generate modal content */
 
